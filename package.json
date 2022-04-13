@@ -1,0 +1,23 @@
+{
+  "name": "api_restful-node_ts",
+  "version": "1.0.0",
+  "description": "```\r npm init -y\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasrmagalhaes/api_restful-node_ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasrmagalhaes/api_restful-node_ts/issues"
+  },
+  "homepage": "https://github.com/lucasrmagalhaes/api_restful-node_ts#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
