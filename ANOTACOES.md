@@ -10,3 +10,5 @@
 - 3xx: Redirecionamento (301 - Moved permanently, 302 - Moved)
 - 4xx: Erros do cliente (400 - Bad request, 401 - Unauthorized, 404 - Not found)
 - 5xx: Erros internos do servidor
+
+* [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=pt)
