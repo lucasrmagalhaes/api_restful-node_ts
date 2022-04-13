@@ -29,3 +29,19 @@ npm update nome-modulo
 ```
 npm uninstall nome-modulo
 ```
+
+```
+node index.js
+```
+
+```
+npm install nodemon -D
+```
+
+```
+npx nodemon index.js
+```
+
+```
+npm start
+```
