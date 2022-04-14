@@ -12,3 +12,4 @@
 - 5xx: Erros internos do servidor
 
 * [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=pt)
+* [Insomnia](https://insomnia.rest/)
