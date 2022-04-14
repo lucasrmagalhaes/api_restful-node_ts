@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/lucasrmagalhaes/api_restful-node_ts#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
