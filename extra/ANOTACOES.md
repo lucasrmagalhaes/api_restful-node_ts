@@ -14,3 +14,4 @@
 **Links**
 * [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=pt)
 * [Insomnia](https://insomnia.rest/)
+* [Knex.js](http://knexjs.org/)
