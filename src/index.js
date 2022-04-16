@@ -7,7 +7,20 @@ app.use(express.json());
 
 const projects = [];
 
-app.get('/projects', (request, response) => {
+// Middleware
+function logRoutes(request, response, next) {
+    const { method, url } = request;
+
+    const route = `[${method.toUpperCase()}] ${url}`;
+
+    console.log(route);
+
+    return next();
+}
+
+// app.use(logRoutes);
+
+app.get('/projects', logRoutes, (request, response) => {
     const { title } = request.query;
 
     const results = title 
