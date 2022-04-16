@@ -42,3 +42,11 @@ npm install ts-node-dev -D
 ```
 npm run dev
 ```
+
+```
+npm install knex
+```
+
+```
+npm install sqlite3
+```
