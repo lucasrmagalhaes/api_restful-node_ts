@@ -44,9 +44,13 @@ npm run dev
 ```
 
 ```
-npm install knex
+npm install knex@^0.95.15
 ```
 
 ```
 npm install sqlite3
+```
+
+```
+npx knex --knexfile knexfile.ts migrate:latest
 ```
