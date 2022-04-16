@@ -54,3 +54,13 @@ npm install sqlite3
 ```
 npx knex --knexfile knexfile.ts migrate:latest
 ```
+```
+npm run knex:migrate
+```
+
+```
+npx knex --knexfile knexfile.ts seed:run
+```
+```
+npm run knex:seed
+```
