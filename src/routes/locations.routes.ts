@@ -3,6 +3,39 @@ import knex from '../database/connection';
 
 const locationsRouter: Router = Router();
 
+locationsRouter.get('/', async (request, response) => {
+    const { city, uf, items } = request.query;
+
+    const parsedItems = <any> String(items).split(',').map(item => Number(item.trim()));
+
+    const locations = await knex('locations')
+        .join('location_items', 'locations.id', '=', 'location_items.location_id')
+        .whereIn('location_items.item_id', parsedItems)
+        .where('city', String(city))
+        .where('uf', String(uf))
+        .distinct()
+        .select('locations.*');
+
+    return response.json(locations);
+});
+
+locationsRouter.get('/:id', async (request, response) => {
+    const { id } = request.params;
+
+    const location = await knex('locations').where('id', id).first();
+
+    if (!location) {
+        return response.status(400).json({ message: 'Location not found.' });
+    }
+
+    const items = await knex('items')
+        .join('location_items', 'items.id', '=', 'location_items.item_id')
+        .where('location_items.location_id', id)
+        .select('items.title');
+
+    return response.json({ location, items });
+});
+
 locationsRouter.post('/', async (request, response) => {
     const {
         name,
@@ -69,23 +102,6 @@ locationsRouter.post('/', async (request, response) => {
         id: location_id,
         ...location
     });
-});
-
-locationsRouter.get('/:id', async (request, response) => {
-    const { id } = request.params;
-
-    const location = await knex('locations').where('id', id).first();
-
-    if (!location) {
-        return response.status(400).json({ message: 'Location not found.' });
-    }
-
-    const items = await knex('items')
-        .join('location_items', 'items.id', '=', 'location_items.item_id')
-        .where('location_items.location_id', id)
-        .select('items.title');
-
-    return response.json({ location, items });
 });
 
 export default locationsRouter;
