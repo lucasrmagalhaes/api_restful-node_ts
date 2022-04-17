@@ -74,3 +74,11 @@ app.use(cors({
     origin: ['dominio.com.br', 'https://github.com/lucasrmagalhaes']
 }));
 ```
+
+```
+npm i multer
+```
+
+```
+npm i @types/multer -D
+```

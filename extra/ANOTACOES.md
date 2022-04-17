@@ -18,3 +18,6 @@
 
 **CORS** <br>
 Cross Origin Resource Sharing é um mecanismo que permite que recursos restritos de uma página da web sejam solicitados a partir de um domínio/endereço distinto.
+
+**Multer** <br>
+Multer é um middleware Node.js para manipulação de mulpart/form-data, que é usado principalmente para upload de arquivos.
