@@ -64,3 +64,13 @@ npx knex --knexfile knexfile.ts seed:run
 ```
 npm run knex:seed
 ```
+
+```
+npm i cors && npm i @types/cors
+```
+
+```js
+app.use(cors({
+    origin: ['dominio.com.br', 'https://github.com/lucasrmagalhaes']
+}));
+```
