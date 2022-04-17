@@ -15,3 +15,6 @@
 * [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=pt)
 * [Insomnia](https://insomnia.rest/)
 * [Knex.js](http://knexjs.org/)
+
+**CORS** <br>
+Cross Origin Resource Sharing é um mecanismo que permite que recursos restritos de uma página da web sejam solicitados a partir de um domínio/endereço distinto.
