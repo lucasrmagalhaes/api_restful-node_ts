@@ -82,3 +82,7 @@ npm i multer
 ```
 npm i @types/multer -D
 ```
+
+```
+npm i celebrate
+```
