@@ -11,13 +11,14 @@
 - 4xx: Erros do cliente (400 - Bad request, 401 - Unauthorized, 404 - Not found)
 - 5xx: Erros internos do servidor
 
-**Links**
-* [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=pt)
-* [Insomnia](https://insomnia.rest/)
-* [Knex.js](http://knexjs.org/)
-
 **CORS** <br>
 Cross Origin Resource Sharing é um mecanismo que permite que recursos restritos de uma página da web sejam solicitados a partir de um domínio/endereço distinto.
 
 **Multer** <br>
 Multer é um middleware Node.js para manipulação de mulpart/form-data, que é usado principalmente para upload de arquivos.
+
+**Links**
+* [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=pt)
+* [Insomnia](https://insomnia.rest/)
+* [Knex.js](http://knexjs.org/)
+* [Joi](https://joi.dev/)
