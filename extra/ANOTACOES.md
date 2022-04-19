@@ -22,3 +22,8 @@ Multer é um middleware Node.js para manipulação de mulpart/form-data, que é 
 * [Insomnia](https://insomnia.rest/)
 * [Knex.js](http://knexjs.org/)
 * [Joi](https://joi.dev/)
+* [JSON Web Token](https://jwt.io/)
+* [MD5 Online](http://www.md5.cz/)
+
+**Autenticação JWT** <br>
+JSON WEB TOKEN - Token em formato JSON usado para autenticar usuários em APIs.

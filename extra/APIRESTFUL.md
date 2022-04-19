@@ -86,3 +86,19 @@ npm i @types/multer -D
 ```
 npm i celebrate
 ```
+
+```
+npm i bcryptjs
+```
+
+```
+npm i --save-dev @types/bcryptjs -D
+```
+
+```
+npm i jsonwebtoken
+```
+
+```
+npm i --save-dev @types/jsonwebtoken -D
+```
