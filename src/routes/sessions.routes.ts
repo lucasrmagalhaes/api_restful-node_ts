@@ -3,7 +3,6 @@ import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import knex from '../database/connection';
 import authConfig from '../config/auth';
-import auth from '../config/auth';
 
 const sessionsRouter = Router();
 

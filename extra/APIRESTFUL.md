@@ -146,3 +146,8 @@ pm2 logs
 ```
 pm2 plus
 ```
+
+- Node.js - Porta em uso. CMD - ADM: ```C:\Windows\System32>```
+```
+taskkill /F /IM node.exe
+```

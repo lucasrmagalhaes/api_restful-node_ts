@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import knex from '../database/connection';
+import env from '../config/env';
 
 const itemsRouter = Router();
 
@@ -10,7 +11,7 @@ itemsRouter.get('/', async (request, response) => {
         return {
             id: item.id,
             title: item.title,
-            image_url: `http://localhost:3333/uploads/${item.image}`
+            image_url: `${env.host}:${env.port}/uploads/${item.image}`
         }
     });
 
