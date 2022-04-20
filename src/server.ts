@@ -1,8 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import { errors } from 'celebrate';
 import routes from './routes';
+import { errors } from 'celebrate';
+import env from './config/env';
 
 const app = express();
 
@@ -16,6 +17,6 @@ app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 app.use(errors());
 
-app.listen(3333, () => {
-    console.log('Server started on port 3333.');
+app.listen(env.port, () => {
+    console.log(`Server started on port ${env.port}.`);
 });
