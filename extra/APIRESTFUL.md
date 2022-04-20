@@ -102,3 +102,47 @@ npm i jsonwebtoken
 ```
 npm i --save-dev @types/jsonwebtoken -D
 ```
+
+```
+npm install pm2@latest -g
+```
+
+```
+npm run build
+```
+
+```
+cd dist/src/
+```
+
+```
+pm2 start server.js
+```
+
+```
+pm2 restart server.js
+```
+
+```
+pm2 reload server.js
+```
+
+```
+pm2 stop server.js
+```
+
+```
+pm2 delete server.js
+```
+
+```
+pm2 monit
+```
+
+```
+pm2 logs
+```
+
+```
+pm2 plus
+```
